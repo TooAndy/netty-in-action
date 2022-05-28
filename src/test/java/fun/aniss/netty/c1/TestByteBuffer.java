@@ -14,10 +14,10 @@ import java.nio.channels.FileChannel;
 @Slf4j
 public class TestByteBuffer {
     public static void main(String[] args) {
-        try (RandomAccessFile file = new RandomAccessFile("data.txt", "rw")) {
+        try (RandomAccessFile file = new RandomAccessFile("src/main/resources/data/data.txt", "rw")) {
             FileChannel channel = file.getChannel();
             ByteBuffer buffer = ByteBuffer.allocate(10);
-            do {
+            while (true) {
                 // 向 buffer 写入
                 int len = channel.read(buffer);
                 log.debug("读到字节数：{}", len);
@@ -31,9 +31,9 @@ public class TestByteBuffer {
                 }
                 // 切换 buffer 写模式
                 buffer.clear();
-            } while (true);
+            }
         } catch (IOException e) {
-            e.printStackTrace();
+            log.error("error.", e);
         }
     }
 }

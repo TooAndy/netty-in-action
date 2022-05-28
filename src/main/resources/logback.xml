@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns="http://ch.qos.logback/xml/ns/logback"
-        xsi:schemaLocation="http://ch.qos.logback/xml/ns/logback logback.xsd">
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="http://ch.qos.logback/xml/ns/logback"
+               xsi:schemaLocation="http://ch.qos.logback/xml/ns/logback
+                https://raw.githubusercontent.com/enricopulatzo/logback-XSD/master/src/main/xsd/logback.xsd">
     <!-- 输出控制，格式控制-->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
@@ -23,11 +23,7 @@
         </encoder>
     </appender>-->
 
-    <!-- 用来控制查看那个类的日志内容（对mybatis name 代表命名空间） -->
-    <logger name="cn.itcast" level="DEBUG" additivity="false">
-        <appender-ref ref="STDOUT"/>
-    </logger>
-
+    <!-- 用来控制查看那个类的日志内容 -->
     <logger name="io.netty.handler.logging.LoggingHandler" level="DEBUG" additivity="false">
         <appender-ref ref="STDOUT"/>
     </logger>
