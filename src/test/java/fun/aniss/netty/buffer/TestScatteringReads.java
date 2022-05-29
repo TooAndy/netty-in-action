@@ -1,4 +1,4 @@
-package fun.aniss.netty.c1;
+package fun.aniss.netty.buffer;
 
 import org.junit.jupiter.api.Test;
 

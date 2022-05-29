@@ -1,9 +1,9 @@
-package fun.aniss.netty.c1;
+package fun.aniss.netty.buffer;
 
 import java.nio.ByteBuffer;
 
-import static fun.aniss.netty.c1.ByteBufferUtil.debugAll;
-import static fun.aniss.netty.c1.ByteBufferUtil.debugRead;
+import static fun.aniss.netty.util.ByteBufferUtil.debugAll;
+import static fun.aniss.netty.util.ByteBufferUtil.debugRead;
 
 /**
  * @author TooAndy

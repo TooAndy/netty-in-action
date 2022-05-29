@@ -1,4 +1,4 @@
-package fun.aniss.netty.c1;
+package fun.aniss.netty.buffer;
 
 import lombok.extern.slf4j.Slf4j;
 

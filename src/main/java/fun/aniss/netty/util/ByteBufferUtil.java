@@ -1,4 +1,4 @@
-package fun.aniss.netty.c1;
+package fun.aniss.netty.util;
 
 import io.netty.util.internal.StringUtil;
 

@@ -1,11 +1,11 @@
-package fun.aniss.netty.c1;
+package fun.aniss.netty.buffer;
 
 import org.junit.jupiter.api.Test;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 
-import static fun.aniss.netty.c1.ByteBufferUtil.debugAll;
+import static fun.aniss.netty.util.ByteBufferUtil.debugAll;
 
 /**
  * ByteBuffer <--> String

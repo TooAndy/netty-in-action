@@ -1,4 +1,4 @@
-package fun.aniss.netty.c1;
+package fun.aniss.netty.buffer;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
